@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="/BACKEND/Winwheel.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <!-- Ruleta CSS -->
+    <link rel="stylesheet" href="/FRONTEND/ESTILOS/estilos_ruleta.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>PARCIAL MyS</title>
+</head>
+
+<body>
+
+
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-4">
+                <h1 class="contador" id="tiempo"></h1>
+
+            </div>
+
+        </div>
+        <div class="row todo">
+            <div class="col-4">
+                <div class="ruleta">
+                    <canvas id="canvas" width="500" height="500"></canvas>
+                </div>
+            </div>
+            <div class="col-8">
+                <div class="container tablero mb-3">
+                    <div class="row saldo1">
+                        <div class="col saldo "></div>
+                        <div class="col borrar-apuestas ROJO historial1">BORRAR APUESTAS</div>
+                    </div>
+                    <div class="row menu-valor">
+                        <div class="col valor active" data-valor=1000>$ 1.000</div>
+                        <div class="col valor" data-valor=5000>$ 5.000</div>
+                        <div class="col valor" data-valor=10000>$ 10.000</div>
+                        <div class="col valor" data-valor=-1>TODO</div>
+                    </div>
+
+                    <div class="row historial1">
+                        <div class="col-2 ">HISTORIAL:</div>
+                        <div class="col-1 historial"></div>
+                        <div class="col-1 historial"></div>
+                        <div class="col-1 historial"></div>
+                        <div class="col-1 historial"></div>
+                        <div class="col-1 historial"></div>
+                        <div class="col-1 historial"></div>
+                        <div class="col-1 historial"></div>
+                        <div class="col-1 historial"></div>
+                        <div class="col-1 historial"></div>
+                        <div class="col-1 historial"></div>
+
+                    </div>
+                    <div class="row numeros">
+                        <div class="col-1 slot" data-numero="0">0</div>
+                        <div class="col-11">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col slot rojo" data-numero="3">3</div>
+                                    <div class="col slot" data-numero="6">6</div>
+                                    <div class="col slot rojo" data-numero="9">9</div>
+                                    <div class="col slot rojo" data-numero="12">12</div>
+                                    <div class="col slot" data-numero="15">15</div>
+                                    <div class="col slot rojo" data-numero="18">18</div>
+                                    <div class="col slot rojo" data-numero="21">21</div>
+                                    <div class="col slot" data-numero="24">24</div>
+                                    <div class="col slot rojo" data-numero="27">27</div>
+                                    <div class="col slot rojo" data-numero="30">30</div>
+                                    <div class="col slot" data-numero="33">33</div>
+                                    <div class="col slot rojo" data-numero="36">36</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col slot" data-numero="2">2</div>
+                                    <div class="col slot rojo" data-numero="5">5</div>
+                                    <div class="col slot" data-numero="8">8</div>
+                                    <div class="col slot" data-numero="11">11</div>
+                                    <div class="col slot rojo" data-numero="14">14</div>
+                                    <div class="col slot" data-numero="17">17</div>
+                                    <div class="col slot" data-numero="20">20</div>
+                                    <div class="col slot rojo" data-numero="23">23</div>
+                                    <div class="col slot" data-numero="26">26</div>
+                                    <div class="col slot" data-numero="29">29</div>
+                                    <div class="col slot rojo" data-numero="32">32</div>
+                                    <div class="col slot" data-numero="35">35</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col slot rojo" data-numero="1">1</div>
+                                    <div class="col slot" data-numero="4">4</div>
+                                    <div class="col slot rojo" data-numero="7">7</div>
+                                    <div class="col slot" data-numero="10">10</div>
+                                    <div class="col slot" data-numero="13">13</div>
+                                    <div class="col slot rojo" data-numero="16">16</div>
+                                    <div class="col slot rojo" data-numero="19">19</div>
+                                    <div class="col slot" data-numero="22">22</div>
+                                    <div class="col slot rojo" data-numero="25">25</div>
+                                    <div class="col slot" data-numero="28">28</div>
+                                    <div class="col slot" data-numero="31">31</div>
+                                    <div class="col slot rojo" data-numero="34">34</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col slot" data-numero="1a Docena">1a Docena</div>
+                                    <div class="col slot" data-numero="2a Docena">2a Docena</div>
+                                    <div class="col slot" data-numero="3a Docena">3a Docena</div>
+                                </div>
+                                <div class="row">
+                                    <div class="col slot" data-numero="1-18">1-18</div>
+                                    <div class="col slot" data-numero="PAR">PAR</div>
+                                    <div class="col slot rojo" data-numero="ROJO">ROJO</div>
+                                    <div class="col slot" data-numero="NEGRO">NEGRO</div>
+                                    <div class="col slot" data-numero="IMPAR">IMPAR</div>
+                                    <div class="col slot" data-numero="19-36">19-36</div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="container mt-5">
+        <h1>Tabla de Docentes</h1>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Salario</th>
+                    <th>Categoría</th>
+                    <th>Tiempo</th>
+                    <th>Posgrado</th>
+                    <th>Seminarios</th>
+                    <th>Horas Trabajadas</th>
+                    <th>Liquidación</th>
+                </tr>
+            </thead>
+            <tbody id="tabla-docentes-body">
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="/BACKEND/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

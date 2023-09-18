@@ -1,0 +1,114 @@
+
+.disable{
+    cursor: not-allowed;
+}
+
+.tablero{
+    
+    font-weight: bold;    
+    text-align: center;
+    min-height: 100px;   
+}
+.todo{
+background-color: #ccc;
+}
+.valor{
+    border-left:solid #6e4949;
+    border-top:solid #6e4949;
+    border-bottom:solid #6e4949;
+    min-height: 60px;
+    padding: 0;
+    margin: 0;
+    text-align: center; line-height:60px
+}
+.menu-valor{
+    border-right:solid #6e4949;
+    
+    min-height: 60px;
+    padding: 0;
+    margin: 0;
+    text-align: center; line-height:60px
+}
+.historial{
+    border-left:solid #6e4949;
+    min-height: 60px;
+    padding: 0;
+    margin: 0;
+    text-align: center; line-height:60px
+}
+.historial1{
+    border-right:solid #6e4949;
+    border-left:solid #6e4949;
+    min-height: 60px;
+    padding: 0;
+    margin: 0;
+    text-align: center; line-height:60px
+}
+.saldo1{
+    border-left:solid #6e4949;
+    border-top:solid #6e4949;
+    min-height: 60px;
+    padding: 0;
+    margin: 0;
+    text-align: center; line-height:60px
+}
+
+
+
+.col{
+    text-align: center;
+}
+.row{
+    text-transform: uppercase;  
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+}
+.rojo{
+    color: red;
+}
+
+.NEGRO{
+    background-color: black;
+    color: white;
+}
+.ROJO{
+    color: white;
+    background-color: red;
+}
+.VERDE{
+    color: white;
+    background-color: green;
+}
+.div{
+    color: rgb(233, 103, 42);
+}
+.active{
+    background-color: green;
+}
+.slot{
+
+  
+    min-height: 60px;
+    padding: 0;
+    margin: 0; 
+    text-align: center;
+}
+.numeros{
+    border:solid #6e4949;
+    min-height: 60px;
+    padding: 0;
+    margin: 0; 
+}
+
+.able{
+    cursor: pointer;
+}
+
+
+
+
+
+
+
